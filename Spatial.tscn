@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Samsung Smart TV 55 Zoll.obj" type="ArrayMesh" id=1]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 5.68745, 3.70216, 1.22904 )
+
+[node name="Spatial" type="Spatial"]
+
+[node name="Samsung Smart TV 55 Zoll" type="MeshInstance" parent="."]
+mesh = ExtResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="Samsung Smart TV 55 Zoll"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0354366, 0.0104246, 0.111083 )
+
+[node name="CollisionShape" type="CollisionShape" parent="Samsung Smart TV 55 Zoll/StaticBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.325125, 2.59412, 1.22125 )
+shape = SubResource( 1 )
