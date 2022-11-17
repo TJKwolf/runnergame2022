@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Spatial.tscn" type="PackedScene" id=1]
+[ext_resource path="res://RoadBase.tscn" type="PackedScene" id=2]
+
+[node name="RoadBase" instance=ExtResource( 2 )]
+
+[node name="odstacles" type="Spatial" parent="." index="1"]
+
+[node name="Spatial" parent="." index="2" instance=ExtResource( 1 )]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 2.00207, 0.977138, -48.0133 )
+
+[node name="Spatial2" parent="." index="3" instance=ExtResource( 1 )]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.357387, 1, -39.3253 )
+
+[node name="Spatial3" parent="." index="4" instance=ExtResource( 1 )]
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 2.007, 1, -25.811 )
