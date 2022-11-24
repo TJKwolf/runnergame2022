@@ -9,9 +9,11 @@ transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0373116, -0.087373, 0 )
 script = ExtResource( 3 )
 
 [node name="RoadStart" parent="." instance=ExtResource( 1 )]
+script = null
 
 [node name="RoadStart2" parent="." instance=ExtResource( 1 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.152259, -50 )
+script = null
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.752313, -1.68993 )
