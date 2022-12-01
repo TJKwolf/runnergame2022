@@ -9,10 +9,10 @@
 transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 2.16962, 1.37689, -47.1276 )
 
 [node name="Spatial2" parent="." index="2" instance=ExtResource( 1 )]
-transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -1.82569, 1.27589, -30.7265 )
+transform = Transform( 0.247942, 0.0224452, -0.0228263, -0.0223507, 0.24899, 0.00205767, 0.0229189, 0, 0.248947, -2.5099, 1.27589, -34.284 )
 
 [node name="Spatial3" parent="." index="3" instance=ExtResource( 1 )]
-transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 2.24461, 1.27589, -30.7265 )
+transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 2.78333, 1.27589, -30.7265 )
 
 [node name="Spatial4" parent="." index="4" instance=ExtResource( 1 )]
 transform = Transform( 0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 2.12672, 0.732074, -10.9413 )

@@ -26,3 +26,4 @@ shadow_enabled = true
 
 [node name="Camera" type="Camera" parent="pivot"]
 transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, -0.363651, 4.87157, 5.52925 )
+far = 300.0

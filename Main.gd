@@ -27,14 +27,6 @@ func _ready():
 
 
 
-func make_random_road():
-	var road_scene = road_scenes[randi() % road_scenes.size()]
-	var road = road_scene.instance()
-	return road
-
-
-
-
 func _physics_process(delta):
 	if player.translation.z < -Roadbase.LENGTH:
 		player.translation.z += Roadbase.LENGTH
@@ -45,6 +37,14 @@ func _physics_process(delta):
 				road.translation.z += Roadbase.LENGTH
 				if road.translation.z > Roadbase.LENGTH:
 					road.queue_free()
+		var new_road := make_random_road()
+		new_road.translation.z = inital_road_count * -Roadbase.LENGTH
+		add_child(new_road)
 		
 	camera_pivot.translation = player.translation
 	camera_pivot.translation.y = 0
+	
+func make_random_road() -> Roadbase:
+	var road_scene = road_scenes[randi() % road_scenes.size()]
+	var road = road_scene.instance()
+	return road
